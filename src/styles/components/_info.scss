@@ -1,0 +1,66 @@
+.info {
+    background-image: url('/images/mid-banner.png');
+    height: 700px;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+}
+
+.info h6 {
+    font-size: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.info-wrapper {
+    text-align: right;
+    margin: 100px;
+}
+
+.info-heading {
+    margin-top: 20px;
+}
+
+.info p {
+    font-size: 15px;
+    color: lightslategray;
+    line-height: 1.6;
+    text-align: right;
+}
+
+.primary-btn {
+    margin-top: 60px;
+}
+
+@include smMaxBreakPoint {
+    
+    .info {
+        height: auto;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .info-heading {
+        font-size: 20px;
+        color: white;
+    }
+
+    .info p {
+        font-size: 10px;
+        color: white;
+    }
+
+    .primary-btn {
+        padding-bottom: 10px;
+        font-size: 10px;
+        border: none;
+        // width: 30vw;
+        height: 20px;
+        display: flex;
+        text-align: center;
+        
+    }
+}

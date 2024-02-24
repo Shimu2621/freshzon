@@ -1,0 +1,139 @@
+.signup h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // min-height: auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: #655858; 
+    // background: linear-gradient(to bottom, rgb(194, 111, 111), rgb(94, 86, 86));
+}
+
+
+.signup-form-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 5px;
+    flex-wrap: wrap;
+    // max-width: 0 auto;
+    // align-items: center;
+    min-height: 100vh;
+    // Use min-height to ensure the background covers the entire viewport even when the content is smaller
+    // background: #fff;
+    // background: linear-gradient(to bottom, rgb(194, 111, 111), rgb(94, 86, 86));
+
+
+    .signup-form-container h2 {
+        text-align: center;
+    }
+
+    .signup-form-box {
+        background-color: #fff;
+        border-radius: 7px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        padding: 40px;
+        width: 380px;
+        height: 440px;
+        text-align: center;
+
+    }
+
+    .signup-form-box h4 {
+        color: #655858;
+        margin-bottom: 30px;
+    }
+
+    .signup-form .form-group {
+        margin: 10px 0;
+    }
+
+    .signup-form input {
+        padding: 9px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        font-size: 16px;
+        // outline: none;
+        width: 275px;
+        margin-bottom: 10px;
+    }
+    .signup-info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        font-size: 16px;
+        color: #655858;
+    }
+
+    .signup-form button {
+        padding: 8px;
+        border: none;
+        border-radius: 3px;
+        background-color: linear-gradient(to bottom, rgb(194, 111, 111), rgb(94, 86, 86));
+        background-color: rgb(194, 111, 111);
+        cursor: pointer;
+        font-size: 16px;
+        color: #fff;
+        transition: background-color 0.2s;
+        width: 300px;
+        font-weight: bold;
+    }
+
+    .signup-form button:hover {
+        background-color: rgb(229, 126, 126);
+    }
+    .otp-form-box {
+        background-color: #fff;
+        border-radius: 7px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+        padding: 30px;
+        width: 360px;
+        height: 240px;
+        text-align: center;
+    }
+    .otp-form-box h4 {
+        color: #655858;
+        margin-bottom: 30px;
+    }
+    .signup-icon {
+        color: #655858;
+        font-size: 16px;
+        padding-top: 10px;
+        margin-right: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 1.2rem;
+
+        .icon-list {
+            gap: 7px;
+            color: whitesmoke;
+            // font-size: 12px;
+            padding: 4px;
+            padding-top: 4px;
+            margin-top: 4px;
+            width: 10px;
+            border-radius: 3px;
+            float: right;
+            align-items: center;
+            display: flex;
+            margin-bottom: 10px;
+            
+
+            .fb-icon {
+                background-color: #0c0c95;
+            }
+            .ggl-icon {
+                background-color: rgb(46, 152, 218);
+            }
+            .link-icon {
+                background-color: rgb(223, 62, 62);
+            }
+            .twitter-icon {
+                background-color: rgb(80, 141, 222);
+            }
+        }
+    }
+}

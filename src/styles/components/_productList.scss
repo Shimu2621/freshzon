@@ -1,0 +1,94 @@
+.product-list-container {
+    position: absolute;
+    width: 70%;
+    height: auto;
+    top: 16%;
+    left: 28%;
+    padding: 3px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    margin-bottom: 8px;
+
+    .list-title {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: 700;
+        margin-top: 6px;
+    }
+
+    .product-list {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    .product-list td,
+    .product-list th {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+
+    .product-list tr:nth-child(even){
+        // background-color:  #f2f2f2;
+        background-color:  #d5d0d0;
+    }
+
+    .product-list tr:hover {
+        // background-color: #70b7e7;
+        background-color:  #918c8c;
+    }
+
+    .product-list th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #0a334e;
+        color: white;
+    }
+
+    .resizer {
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 5px;
+        cursor: pointer;
+        user-select: none;
+        touch-action: none;
+        border-radius: 6px;
+    }
+
+    .resizer.isResizing {
+        background: #2eff31;
+        opacity: 1;
+    }
+
+    .resizer:hover {
+        opacity: 1;
+    }
+    .pagination-btn button {
+        padding: 3px;
+        padding-left: 8px;
+        padding-right: 8px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .page-size {
+        color: black;
+        cursor: pointer;
+
+        h3 {
+            color: black;
+            padding-right: 9px;
+            cursor: pointer;
+        }
+    }
+}
+
+
+
+
+
+

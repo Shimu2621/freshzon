@@ -1,0 +1,44 @@
+.service {
+    padding-top: 50px;
+    
+    .service-wrapper {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 15px;
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 5px 3px;
+
+
+        img {
+        //   padding-top: 5px;
+          margin: 15px 30px;
+          ;  
+        }
+
+        .service-icon {
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-radius: 50%;
+            background-color: rgb(243, 246, 246);
+            height: 130px;
+            width: 130px;
+            padding-top: 8px;
+            padding-bottom: 30px;
+            margin: 0;
+
+            .grid-cols-3-responsive {
+                @include lgMaxBreakPoint {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            
+                @include smMaxBreakPoint {
+                    grid-template-columns: repeat(1, 1fr);
+                }
+            }
+        }
+    
+    }
+}

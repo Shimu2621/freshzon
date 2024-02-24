@@ -1,0 +1,92 @@
+.banner {
+    background-image: url("/images/mid-banner.png");
+    position: relative;
+    margin: 50px;
+    // max-width: 0 auto;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    background-position: center;
+    // background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: contain;
+    justify-content: flex-end;
+    // border-radius: 40px;
+    
+    
+
+    .banner-wrapper {
+        text-align: center;
+        .img {
+            background-position: 250px 380px;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            border-radius: 40px;
+            height: 400px;
+            max-width: 800px;
+            margin: 0 auto
+            // margin: 80px 5px;
+        }
+        .banner-details {
+            // position: absolute;
+            // text-align: left;
+            // top: 40%;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            text-align: flex-end;
+            margin-left: 40px;
+            padding-left: 40px;
+
+            h2 {
+                font-size: 20px;
+                font-weight: bold;
+                line-height: 1.4rem;
+
+                span {
+                    color: $secondaryColor;
+                    // padding: 60px;
+                }
+            }
+            p {
+                
+                font-size: 12px;
+                // padding: 18px;
+                line-height: 1.4;
+                align-items: flex-end;
+                text-align: right;
+                color: black;
+            }
+            
+        }
+
+        @include smMaxBreakPoint {
+            .banner-details {
+                // width: 100%;
+                h2 {
+                    font-size: 9px;
+                    line-height: 10px;
+
+                    span {
+                        padding: 30px;
+                    }
+                }
+
+                p {
+                    font-size: 7px;
+                    padding: 8px;
+                    // text-align: center;
+                }
+                button {
+                    font-size: 8px;
+                    width: 70px;
+                    padding: 4px;
+                    margin-top: 5px;
+                    
+                }
+            }
+        }
+       }
+        
+        
+    }

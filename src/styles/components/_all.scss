@@ -1,0 +1,187 @@
+.organic {
+    padding: 30px;
+
+    .flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include smMaxBreakPoint {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            font-size: 15px;
+        }
+    }
+
+    .organic-wrapper-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 15px;
+
+        @include smMaxBreakPoint {
+            grid-template-columns: repeat(1, 1fr);
+            // margin: 30px;
+        }
+    }
+          
+        // h5 {
+        //     color:  white;
+        //     background-color: $secondaryColor;
+        //     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        //     border-radius: 10px;
+        //     padding: 10px;
+        //     padding-top: 7px;
+        //     height: 30px;
+        //     width: 70px;
+        //     cursor: pointer;
+        // }
+
+
+        h2 {
+            @include smMaxBreakPoint {
+                font-size: 15px;
+                line-height: 15px;
+            }
+        }
+
+        p {
+            background-color: rgb(243, 246, 246);
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+            border-radius: 10px;
+            padding: 8px;
+            padding-top: 4px;
+            border: none;
+            cursor: pointer;
+        }
+    
+    .veg-details {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        border: none;
+        background-color: rgb(243, 246, 246);
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        border-radius: 20px;
+        width: 470px;
+        height: 250px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 30px;
+
+        @include smMaxBreakPoint {
+            width: 340px;
+            height: 200px;
+            margin-right: 0;
+            margin-bottom: 15px;
+            padding: 10px;
+            border-radius: 60px;
+            // max-width: 0 auto;
+            // margin: 15px;
+            // margin-right: 10px;
+        }
+        
+        
+
+        img {
+            height: 150px;
+            width: 200px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border: none;
+            border-radius: 15px;
+            background-color: rgb(242, 238, 238);
+            margin: 50px 25px;
+            object-fit: contain;
+
+            @include smMaxBreakPoint {
+                width: 100px;
+                height: 80px;
+                object-fit: contain;
+                display: flex;
+                // padding-left: 5px;
+                
+            }
+        }
+        // .veg-info {
+        //     display: flex;
+        //     justify-content: center;
+        //     align-items: center;
+        // }
+        .text {
+            // margin-bottom: 110px;
+            // display: grid;
+            // grid-template-columns: repeat(2, 1fr);
+            justify-content: center;
+            font-weight: bold;
+            font-size: 10px;
+            padding: 10px;
+            border-radius: 7px;
+            color: $secondaryColor;
+            margin-top: 60px;
+
+            @include smMaxBreakPoint {
+                font-size: 8px;
+                flex-direction: column;
+            
+            }
+            .disc {
+                margin-left: 40px;
+                background-color: rgb(238, 69, 69);
+                border-radius: 15px;
+                padding: 6px;
+                color: white;
+                font-size: 10px;
+
+                @include smMaxBreakPoint {
+                    font-size: 8px;
+                }
+            }
+        }
+        
+        h6 {
+            color: orange;
+            font-size: 13px;
+            padding-top: 18px;
+            margin-right: 60px;
+            
+            @include smMaxBreakPoint {
+                font-size: 8px;
+            }
+        }
+        h4 {
+            font-size: 17px;
+            color: rgb(65, 57, 57);
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+
+            @include smMaxBreakPoint {
+                font-size: 12px;
+                flex-direction: row;
+            }
+        }
+        .price {
+            font-size: 14px;
+            color: $secondaryColor;
+            padding: 5px;
+            margin-right: 12px;
+            font-weight: bold;
+
+            @include smMaxBreakPoint {
+                font-size: 10px;
+            }
+        }
+        .pre-price {
+            color: rgb(198, 188, 188);
+            margin-left: 5px;
+        }
+
+        .button {
+            padding: 35px;
+
+            @include smMaxBreakPoint {
+                font-size: 10px;
+            }
+        }
+
+    }
+    
+}

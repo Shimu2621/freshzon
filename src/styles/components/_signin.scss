@@ -1,0 +1,113 @@
+.signin h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: #655858; 
+}
+
+.signin-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // Use min-height to ensure the background covers the entire viewport even when the content is smaller
+    background: #fff;
+
+    .signin-form-container h2 {
+        text-align: center;
+    }
+
+    .signin-form-box {
+        background-color: #fff;
+        border-radius: 7px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        padding: 40px;
+        width: 380px;
+        height: 400px;
+        text-align: center;
+    }
+
+    .signin-form-box h4 {
+        color: #655858;
+        margin-bottom: 30px;
+    }
+
+    .signin-form .form-group {
+        margin: 10px 0;
+    }
+
+    .signin-form input {
+        padding: 9px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        font-size: 16px;
+        // outline: none;
+        width: 275px;
+        margin-bottom: 10px;
+    }
+    .signin-info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 20px;
+        margin-right: 20px;
+        font-size: 16px;
+        color: #655858;
+    }
+
+    .signin-form button {
+        padding: 8px;
+        background-color: rgb(194, 111, 111);
+        border: none;
+        border-radius: 3px;
+        background-color: linear-gradient(to bottom, rgb(194, 111, 111), rgb(94, 86, 86));
+        cursor: pointer;
+        font-size: 15px;
+        color: #fff;
+        transition: background-color 0.2s;
+        width: 300px;
+        font-weight: bold;
+    }
+
+    .signin-form button:hover {
+        background-color: rgb(229, 126, 126);
+    }
+    .signin-icon {
+        color: #655858;
+        font-size: 16px;
+        padding-top: 15px;
+        margin-right: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 1.2rem;
+
+        .icon-list {
+            gap: 7px;
+            color: whitesmoke;
+            // font-size: 12px;
+            padding: 10px;
+            padding-top: 4px;
+            margin-top: 4px;
+            width: 45px;
+            border-radius: 3px;
+            float: right;
+            align-items: center;
+            display: flex;
+
+            .fb-icon {
+                background-color: #0c0c95;
+            }
+            .ggl-icon {
+                background-color: rgb(46, 152, 218);
+            }
+            .link-icon {
+                background-color: rgb(223, 62, 62);
+            }
+            .twitter-icon {
+                background-color: rgb(80, 141, 222);
+            }
+        }
+    }
+}

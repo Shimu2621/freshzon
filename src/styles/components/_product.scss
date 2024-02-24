@@ -1,0 +1,114 @@
+.product {
+    padding: 50px;
+
+    .product-wrapper-container {
+        display: flex;
+        // grid-template-columns: repeat(2 1fr);
+        justify-content: space-between;
+        align-items: center;
+        
+        h6 {
+            color: $secondaryColor;
+        }
+
+        h2 {
+            font-size: 30px;
+            font-weight: 600;
+
+            @include smMaxBreakPoint {
+                font-size: 20px;
+            }
+        }
+
+        .wrapper-btn button {
+            // padding: 10px;
+
+            @include smMaxBreakPoint {
+                font-size: 8px;
+                padding: 8px;
+            }
+        }
+    }
+    .product-details {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        
+        @include mdMaxBreakPoint {
+            grid-template-columns: repeat(2, 1fr);
+            font-size: 10px;
+        }
+
+        @include smMaxBreakPoint {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        
+        .product-info {
+            border: none;
+            background-color: rgb(243, 246, 246);
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+            border-radius: 20px;
+            margin: 20px;
+            padding: 20px;
+
+            h5 {
+                color: $secondaryColor;
+            }
+
+            h4 {
+                color:  rgb(58, 57, 57);
+                font-size: 20px;
+
+                @include smMaxBreakPoint {
+                    font-size: 12px;
+
+                }
+            }
+
+            p {
+                color: $secondaryColor;
+                font-size: 17px;
+
+                @include smMaxBreakPoint {
+                    font-size: 10px;
+                }
+            }
+            h6 {
+                color: rgb(232, 96, 96);
+            }
+
+            .button {
+                float: right;
+                background-color: rgb(238, 69, 69);
+                border-radius: 14px;
+                border: none;
+                padding: 5px;
+                font-size: 10px;
+                margin-bottom: 15px;
+
+                @include smMaxBreakPoint {
+                    font-size: 8px;
+                }
+            }
+
+            img {
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                border: none;
+                border-radius: 15px;
+                background-color: rgb(228, 229, 231);
+                height: 180px;
+                width: 160px;
+                margin-left: 18px;
+                margin-right: 10px;
+                max-width: 0 auto;
+                object-fit: contain;
+
+                @include smMaxBreakPoint {
+                    height: 150px;
+                    width: 140px;
+                }
+                
+            }
+        }
+    }
+    
+}
